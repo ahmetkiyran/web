@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basıc Selectors</title>
+
+    <style>
+/*tüm h1 leri seç */
+/*h1{
+    color: red;
+    background-color: blue;
+}
+p{
+    color: red;
+    background-color: blue;
+} bunlar ayrı ayrı ama aynı özelliklere sahip o yüzden ikisini birlikte aynı çatıda birleştirmek istiyorum*/
+
+/*h1,p{
+  color: red;
+    background-color: blue;
+} burda ikisine de aynı özellikleri atadık*/
+/* şimdi de sadece id si logo olan h1 leri almak istiyorum*/
+
+/*#logo{
+    color: red;
+    background-color: blue;
+} burda id si logo olanı seçtik id tanımlama için # işaretini kullanıyoruz */
+
+/*.info{
+    color: red;
+    background-color: blue;
+} burda da class ı info olanları seçtik*/
+
+/*#logo,.lead{
+    color: red;
+    background-color: blue;
+} id si logo olanları ve classı lead olanları birlikte seçtik*/
+
+#para1.lead{
+    color: red;
+    background-color: blue;
+} /*burda araya virgül koymadık ve tek bir paragrafı seçtirmiş olduk*/
+
+/*a{
+    text-decoration: none; bu özellik sayesinde sayfadaki linklwrin altındaki çizgileri yok ediyoruz
+}*/
+
+/*ul li a{
+    text-decoration: none;
+} burda diyoruz ki sadece ul in içindeki  li nin içindeki a etiketlerinin
+altındaki çizgileri kaldır 
+*/
+
+.info span{
+    color: red;
+}
+*{
+    background-color: beige;
+    font-size: 30px;
+} /*bu * işareti html sayfasındaki her şeyi seçmemizi sağlar*/
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header 1</h1>
+    <h1 id="logo">Logo</h1>
+
+    <ul>
+        <li>
+            <a href="#">Contact</a>
+        </li>
+        <li>
+            <a href="#">Services</a>
+        </li>
+    </ul>
+    </header>
+    <h1>
+        Header 2
+    </h1>
+    <p id="para1" class="lead info">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, corporis!
+    </p>
+    <p class="info">
+     Lorem ipsum <span class="primary">dolor</span> sit amet, 
+     consectetur adipisicing elit. Odio, cumque.
+    </p>
+    <p>test paragraph</p>
+    <a href="#">home</a>
+</body>
+</html>

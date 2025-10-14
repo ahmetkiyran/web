@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    
+       <!--/* a{
+            color: red;
+        }
+        ul li a{
+            color: burlywood;
+        }
+        h1{
+            color: blue;
+        }
+        #logo{
+            color: red !important ; inline css özelliği ezmesin diye important yazarız
+        }/*css yukarıdan aşağıya doğru çalışmış oluyor yani üstteki ile alttaki aynı yeri etkiliyorsa alttaki her zaman üsttekini ezer*/
+        /*bu yüzden genel seçicilerimizi en tepeye özel olanları ise en alta koymalıyız
+        */-->
+        <link rel="stylesheet" href="css-styling/style.css">
+        <link rel="stylesheet" href="css-styling/style1.css">
+
+        <!--burda da yine alttaki üsttekinin özelliklerini ezecek-->
+        
+
+   
+</head>
+<body>
+    <header>
+        <h1>Header 1</h1>
+    <h1 id="logo">Logo</h1>
+
+    <ul>
+        <li>
+            <a href="#">Contact</a>
+        </li>
+        <li>
+            <a href="#">Services</a>
+        </li>
+    </ul>
+    </header>
+    <h1>
+        Header 2
+    </h1>
+    <p id="para1" class="lead info">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, corporis!
+    </p>
+    <p class="info">
+     Lorem ipsum <span class="primary">dolor</span> sit amet, 
+     consectetur adipisicing elit. Odio, cumque.
+    </p>
+    <p>test paragraph</p>
+    <a href="#">home</a>
+</body>
+</html>
